@@ -2,132 +2,65 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Umut Deveci | Digital Business Card</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    background:#eef3f8;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
-}
-
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:linear-gradient(135deg,#eef3f8,#dbe8f5);
+display:flex;align-items:center;justify-content:center;
+min-height:100vh;padding:20px}
 .card{
-    width:100%;
-    max-width:390px;
-    background:#fff;
-    border-radius:24px;
-    padding:40px 30px;
-    text-align:center;
-    box-shadow:0 20px 50px rgba(15,59,113,.15);
-}
-
+width:100%;max-width:390px;background:#fff;border-radius:28px;
+padding:40px 30px;box-shadow:0 25px 60px rgba(15,59,113,.18);
+animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
 .avatar{
-    width:92px;
-    height:92px;
-    border-radius:50%;
-    margin:0 auto 25px;
-    background:#0F3B71;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:34px;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-h1{
-    color:#0F3B71;
-    font-size:31px;
-    margin-bottom:8px;
-}
-
-h2{
-    color:#666;
-    font-size:18px;
-    font-weight:500;
-    margin-bottom:28px;
-}
-
-.company{
-    color:#555;
-    line-height:1.7;
-    margin-bottom:30px;
-}
-
+width:92px;height:92px;border-radius:50%;margin:0 auto 24px;
+background:#0F3B71;color:#fff;display:flex;align-items:center;
+justify-content:center;font-size:34px;font-weight:700}
+h1{color:#0F3B71;font-size:30px;text-align:center}
+h2{margin-top:8px;color:#6b7280;font-size:18px;font-weight:500;text-align:center}
+.company{text-align:center;color:#555;line-height:1.6;margin:28px 0}
 .button{
-    display:block;
-    width:100%;
-    background:#0F3B71;
-    color:white;
-    text-decoration:none;
-    padding:16px;
-    margin-top:14px;
-    border-radius:14px;
-    font-weight:600;
-    font-size:16px;
-    transition:.2s;
-}
-
-.button:hover{
-    background:#1b4f8c;
-    transform:translateY(-2px);
-}
-
-.footer{
-    margin-top:30px;
-    color:#9ca3af;
-    font-size:13px;
-}
+display:flex;align-items:center;justify-content:center;gap:10px;
+text-decoration:none;background:#0F3B71;color:#fff;
+padding:15px;border-radius:14px;margin-top:14px;
+font-weight:600;transition:.2s}
+.button:hover{background:#1b4f8c;transform:translateY(-2px)}
+.footer{text-align:center;color:#9ca3af;font-size:13px;margin-top:28px}
 </style>
-
 </head>
-
 <body>
-
 <div class="card">
-
-<div class="avatar">
-UD
-</div>
-
+<div class="avatar">UD</div>
 <h1>Umut Deveci</h1>
-
 <h2>Finans ve Raporlama Müdürü</h2>
-
 <div class="company">
-İDATA DANIŞMANLIK VE HİZMET<br>
-DIŞ TİCARET A.Ş.
+<strong>İDATA</strong><br>
+Danışmanlık ve Hizmet Dış Ticaret A.Ş.
 </div>
 
 <a class="button" href="umut-deveci.vcf">
-💾 Kişilere Kaydet
+<i class="fa-solid fa-address-card"></i>
+<span>Kişilere Kaydet</span>
 </a>
 
 <a class="button" href="tel:+905382163736">
-📞 Ara
+<i class="fa-solid fa-phone"></i>
+<span>Ara</span>
 </a>
 
 <a class="button" href="mailto:u.deveci@idata.com.tr">
-✉️ E-posta Gönder
+<i class="fa-solid fa-envelope"></i>
+<span>E‑posta Gönder</span>
 </a>
 
 <div class="footer">
 Digital Business Card
 </div>
-
 </div>
-
 </body>
 </html>
